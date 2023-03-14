@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lmweddingwebsite": {
+      "hosting": {
+        "LMWeddingWebsite": [
+          "liamandmicki2023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lmweddingwebsite"
+  }
+}

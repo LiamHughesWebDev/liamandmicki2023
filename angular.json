@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "LMWeddingWebsite:build:production",
+            "firebaseProject": "lmweddingwebsite",
+            "firebaseHostingSite": "liamandmicki2023"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "941ac848-fe1a-49be-b5bd-6ca60d21c43b"
   }
 }
