@@ -1,0 +1,22 @@
+<nav>
+    <a href="" class="logo">
+      <span>Liam &nbsp;</span>
+      <span>& &nbsp;</span>
+      <span>Micki &nbsp;</span>
+      <span class="hide2023">2023</span>
+    </a>
+  
+    <ul class="navbar" [ngClass]="{'open' : menuOpen == true}">
+      <li><a href="">Where At?</a></li>
+      <li><a href="">What to Wear?</a></li>
+      <li><a href="">What to Do?</a></li>
+      <li><a href="">Where to Stay?</a></li>
+      <li><a href="" class="hideRSVP">RSVP</a></li>
+      <li><a href="">Registry</a></li>
+    </ul>
+
+    <div class="rsvp">
+        <a href="">RSVP</a>
+        <div class="menu-icon" (click)="showMenu()"><img src="../../assets/imgs/menu-icon.svg" alt="Menu Icon"></div>
+    </div>
+</nav>

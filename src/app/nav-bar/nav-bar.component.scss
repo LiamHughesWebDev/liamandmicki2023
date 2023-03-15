@@ -1,0 +1,136 @@
+$mainTextColor: #c2a25d;
+$altTextColor:   #ad8d49;  
+
+@font-face {
+    font-family: GreatVibes;
+    src: url(../../assets/fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: GoodDog;
+    src: url(../../assets/fonts/GOODDP__.TTF);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 28px 5%;
+    justify-content: space-between;
+    background: transparent;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-decoration: none;
+    margin-left: 10%;
+    transition: all .50s ease;
+}
+
+.logo span{
+    font-family: GreatVibes;
+    font-size: 2.5rem;
+    color: $mainTextColor;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+ul a{
+    font-family: GoodDog;
+    color: $mainTextColor;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease
+}
+ul a:hover{
+    color: $altTextColor;
+}
+ul a.active{
+    color: $altTextColor;
+}
+.hideRSVP{
+    display: none;
+}
+
+.rsvp{
+    display: flex;
+    align-items: center;
+}
+.rsvp a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: $mainTextColor;
+    font-family: GoodDog;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.rsvp a:hover{
+    color: $altTextColor;
+}
+.rsvp img{
+    width: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+@media (max-width: 1650px) {
+    nav{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+    .logo{
+        margin-left: 5%;
+    }
+    .hide2023{
+        display: none;
+    }
+    ul a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .rsvp img{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        background-color: #38785e  ;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    ul a{
+        display: block;
+        margin: 15px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar.open{
+        right: 2%;
+    }
+    .hideRSVP{
+        display: block;
+    }
+}
