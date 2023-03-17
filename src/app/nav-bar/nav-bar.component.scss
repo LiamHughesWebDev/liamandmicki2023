@@ -1,5 +1,5 @@
-$mainTextColor: #c2a25d;
-$altTextColor:   #ad8d49;  
+$mainTextColor: #b18969;
+$altTextColor:   rgb(153, 125, 66);  
 
 @font-face {
     font-family: GreatVibes;
@@ -18,9 +18,9 @@ nav{
     z-index: 1000;
     display: flex;
     align-items: center;
-    padding: 28px 5%;
+    padding: 20px 5%;
     justify-content: space-between;
-    background: transparent;
+    background-color: #23381f ;
     transition: all .50s ease;
 }
 
@@ -35,7 +35,7 @@ nav{
 
 .logo span{
     font-family: GreatVibes;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $mainTextColor;
 }
 
@@ -47,7 +47,7 @@ ul{
 ul a{
     font-family: GoodDog;
     color: $mainTextColor;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0px 30px;
@@ -72,7 +72,7 @@ ul a.active{
     margin-left: 10px;
     color: $mainTextColor;
     font-family: GoodDog;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
     transition: all .50s ease;
 }
