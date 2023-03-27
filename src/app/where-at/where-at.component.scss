@@ -1,0 +1,74 @@
+$mainTextColor: #b18969;
+$altTextColor:   rgb(153, 125, 66);  
+
+
+@font-face {
+    font-family: GreatVibes;
+    src: url(../../assets/fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: GoodDog;
+    src: url(../../assets/fonts/GOODDP__.TTF);
+}
+
+main{
+    .text{
+        
+        width: 50%;
+        margin: 0 auto;
+
+        h1, p{
+            text-align: center;
+            font-family: GoodDog, 'Times New Roman', Times, serif;
+            color: $mainTextColor;
+        }
+        h1{
+            font-size: 7em;
+            padding-bottom: 0.5em;
+            letter-spacing: .1em;
+        }
+        p{
+            font-size: 2em;
+        }
+        a{
+            color: $mainTextColor;
+        }
+    }
+    
+    .pictures{
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        padding:3em;
+
+        img{
+            padding-bottom: 2em;
+        }
+
+        .img1{
+            width: 100%;
+        }
+        .img2, .img3{
+            width: 48%;
+            height: 30em;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .text{
+        width: 75%!important;
+
+        h1{
+            font-size: 5em !important;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .img2, .img3{
+        width: 100%!important;
+        height: auto;
+    }
+}

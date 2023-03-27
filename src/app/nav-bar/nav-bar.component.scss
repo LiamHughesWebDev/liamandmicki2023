@@ -34,7 +34,7 @@ nav{
 }
 
 .logo span{
-    font-family: GreatVibes;
+    font-family: GreatVibes, 'Times New Roman', Times, serif;
     font-size: 2rem;
     color: $mainTextColor;
 }
@@ -45,9 +45,9 @@ ul{
 }
 
 ul a{
-    font-family: GoodDog;
+    font-family: GoodDog, 'Times New Roman', Times, serif;
     color: $mainTextColor;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0px 30px;
@@ -71,7 +71,7 @@ ul a.active{
     margin-right: 25px;
     margin-left: 10px;
     color: $mainTextColor;
-    font-family: GoodDog;
+    font-family: GoodDog, 'Times New Roman', Times, serif;
     font-size: 1.75rem;
     font-weight: 500;
     transition: all .50s ease;
@@ -131,6 +131,7 @@ ul a.active{
     }
     .navbar.open{
         right: 2%;
+        font-size: 2em;
     }
     .hideRSVP{
         display: block;

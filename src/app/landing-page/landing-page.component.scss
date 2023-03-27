@@ -14,6 +14,7 @@ $altTextColor:   rgb(153, 125, 66);
 img{
     width: 100%;
     height: 80vh;
+    aspect-ratio: 16/9;
 }
 
 .LM{
@@ -24,8 +25,8 @@ img{
 
     .spanText{
         display: block;
-        font-family: GreatVibes;
-        font-size: 5em;
+        font-family: GreatVibes, 'Times New Roman', Times, serif;
+        font-size: 8em;
         font-weight:bold;
         color: $mainTextColor;
         letter-spacing: 0.2em;
@@ -33,7 +34,8 @@ img{
     .date{
         margin-top: 1em;
         font-size: 3em;
-        font-family: GoodDog;
+        font-family: GoodDog, 'Times New Roman', Times, serif;
+        color: $altTextColor;
     }
     .andBar{
         position: relative;
@@ -44,12 +46,12 @@ img{
     }
     .and{
         padding: 1em;
-        font-size: 3em;
+        font-size: 3em!important;
     }
    .andBar:before, .andBar:after{
         content: '';
         display: block;
-        height: 3px;
+        height: 4px;
         width: 40%;
         position: absolute;
         top: 50%;
@@ -71,8 +73,49 @@ img{
         background-color: transparent;
         border: 4px solid $altTextColor;
         color: $mainTextColor;
-        font-family: GoodDog;
+        font-family: GoodDog, 'Times New Roman', Times, serif;
         font-size: 2em;
 
+    }
+}
+.seeMore{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 8em 0;
+    font-family: GoodDog, 'Times New Roman', Times, serif;
+
+    hr{
+        height: 1px;
+        width: 35%;
+        margin: 3em auto;
+        border: none;
+        background: $altTextColor;
+    }
+    h3{
+        font-size: 4em;
+        color: $altTextColor;
+        padding-bottom: 1em;
+    }
+    p{
+        font-size: 2em;
+        color: $mainTextColor;
+    }
+}
+
+@media (max-width: 1250px) {
+    .spanText{
+        font-size: 6em!important;
+        transition: all .50s ease;
+    }
+    
+}
+@media (max-width: 500px) {
+    .spanText{
+        font-size: 4em!important;
+        transition: all .50s ease;
+    }
+    .date{
+        font-size: 1em!important;
     }
 }

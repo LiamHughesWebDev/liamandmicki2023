@@ -1,0 +1,56 @@
+$mainTextColor: #b18969;
+$altTextColor:   rgb(153, 125, 66);  
+
+
+@font-face {
+    font-family: GreatVibes;
+    src: url(../../assets/fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: GoodDog;
+    src: url(../../assets/fonts/GOODDP__.TTF);
+}
+
+main{
+    margin-top: 8em;
+
+    .text{
+        text-align: center;
+        width: 50%;
+        margin: 0em auto;
+
+        h1, p, h2{
+            margin: 0.5em auto;
+            font-family: GoodDog, 'Times New Roman', Times, serif;
+            color: $mainTextColor;
+        }
+        h1{
+            font-size: 7em;
+            letter-spacing: .1em;
+        }
+        p{
+            font-size: 2em;
+        }
+        a{
+            color: $mainTextColor;
+        }
+        .smallText{
+            margin: 1em auto;
+            font-size: 1.5em;
+        }
+
+        h2{
+            font-size: 3em;
+        }
+    }
+
+}
+@media (max-width: 1000px) {
+    .text{
+        width: 75%!important;
+        h1{
+            font-size: 5em!important;
+        }
+        h2{ font-size: 2.5em !important;}
+    }
+}
