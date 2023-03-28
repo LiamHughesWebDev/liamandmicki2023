@@ -124,6 +124,7 @@ ul a.active{
         transition: all .50s ease;
     }
     ul a{
+        scroll-behavior: smooth;
         display: block;
         margin: 15px 0;
         padding: 0px 25px;

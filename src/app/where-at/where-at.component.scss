@@ -12,6 +12,8 @@ $altTextColor:   rgb(153, 125, 66);
 }
 
 main{
+    padding-top: 6em; 
+
     .text{
         
         width: 50%;
@@ -52,7 +54,7 @@ main{
         }
         .img2, .img3{
             width: 48%;
-            height: 30em;
+            height: 50em;
         }
     }
 }
@@ -69,6 +71,6 @@ main{
 @media (max-width: 700px) {
     .img2, .img3{
         width: 100%!important;
-        height: auto;
+        height: 10em!important;
     }
 }

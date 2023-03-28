@@ -76,13 +76,17 @@ img{
         font-family: GoodDog, 'Times New Roman', Times, serif;
         font-size: 2em;
 
+        a{
+            color: inherit;
+        }
+     
     }
 }
 .seeMore{
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    padding: 8em 0;
+    padding-top: 8em;
     font-family: GoodDog, 'Times New Roman', Times, serif;
 
     hr{
@@ -111,6 +115,9 @@ img{
     
 }
 @media (max-width: 500px) {
+    img{
+        height: 40vh!important;
+    }
     .spanText{
         font-size: 4em!important;
         transition: all .50s ease;
